@@ -30,5 +30,14 @@ namespace testMvc.Controllers
         {
             return View("-/Views/About/Index.cshtml");
         }
+        //redirect result
+        public RedirectResult ShowInternal()
+        {
+            return Redirect("/Home/Index");
+        }
+        public RedirectResult ShowExternal()
+        {
+            return Redirect("https://www.google.com");
+        }
     }
 }

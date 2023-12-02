@@ -10,12 +10,12 @@ namespace testMvc.Controllers
     {
         // GET: Docs
         public FileResult Show()
-        {
-            return File(Server.MapPath("-/Content/myFile.txt"), "text/plain");
+        { 
+            return File(Server.MapPath("~/Content/myFile.txt"), "text/plain");
         }
         public FileResult Download()
         {
-            return File(Server.MapPath("-/Content/myFile.txt"), "text/plain", "MVC5.txt");
+            return File(Server.MapPath("~/Content/myFile.txt"), "text/plain", "MVC5.txt");
         }
     }
 }
